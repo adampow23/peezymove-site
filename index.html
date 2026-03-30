@@ -139,10 +139,19 @@ nav.scrolled { padding:12px 0; background:rgba(255,255,255,0.95); }
 }
 .btn-ghost:hover { border-color:var(--gray-3); background:var(--bg-2); }
 
-/* iPhone mockup — dark phone on light background */
+/* iPhone mockup — real screenshots */
 .phone-wrapper {
   display:flex; justify-content:center;
   animation:fade-up 1s cubic-bezier(0.16,1,0.3,1) .4s both;
+}
+.phone-frame {
+  width:280px; border-radius:40px;
+  background:var(--phone-bg); padding:12px;
+  box-shadow:0 20px 80px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05);
+  animation:screen-glow 4s ease-in-out infinite;
+}
+.phone-screenshot {
+  width:100%; border-radius:30px; display:block;
 }
 .phone {
   width:280px; height:570px; border-radius:44px;
@@ -456,32 +465,8 @@ footer { padding:40px 0; border-top:1px solid var(--border); }
       </div>
     </div>
     <div class="phone-wrapper">
-      <div class="phone">
-        <div class="phone-notch"></div>
-        <div class="phone-screen">
-          <div class="phone-screen-header">Your Personalized Plan</div>
-          <div class="phone-name">Kiandra's Moving Plan</div>
-          <div class="phone-plan-label">Kansas City, MO to Denver, CO</div>
-          <div class="phone-counter">
-            <div class="phone-counter-num" id="counter">25</div>
-            <div class="phone-counter-label">Days Left</div>
-          </div>
-          <div class="phone-tasks">
-            <div class="phone-task">
-              <div class="phone-task-check done">&#x2713;</div>
-              <span class="phone-task-text done-text">Notify landlord</span>
-            </div>
-            <div class="phone-task">
-              <div class="phone-task-check done">&#x2713;</div>
-              <span class="phone-task-text done-text">Transfer pet records</span>
-            </div>
-            <div class="phone-task">
-              <div class="phone-task-check pending"></div>
-              <span class="phone-task-text">Compare mover quotes</span>
-            </div>
-          </div>
-          <div class="phone-btn">Let's Do This</div>
-        </div>
+      <div class="phone-frame">
+        <img src="screenshot-plan.png" alt="Peezy personalized moving plan" class="phone-screenshot">
       </div>
     </div>
   </div>
@@ -563,28 +548,8 @@ footer { padding:40px 0; border-top:1px solid var(--border); }
   <div class="container">
     <div class="magic-inner">
       <div class="phone-wrapper">
-        <div class="phone phone-2">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
-            <div class="movers-title">Let's find the<br>right movers</div>
-            <div class="movers-sub">Matched to your move details</div>
-            <div class="mover-card">
-              <div class="mover-avatar">A1</div>
-              <div class="mover-info"><h5>A1 Premier Moving</h5><span>Full-service &bull; Licensed &bull; Insured</span></div>
-              <div class="mover-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            </div>
-            <div class="mover-card">
-              <div class="mover-avatar">KC</div>
-              <div class="mover-info"><h5>KC Quality Movers</h5><span>Long-distance specialist</span></div>
-              <div class="mover-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
-            </div>
-            <div class="mover-card">
-              <div class="mover-avatar">MV</div>
-              <div class="mover-info"><h5>MoveRight Co.</h5><span>Budget-friendly &bull; Insured</span></div>
-              <div class="mover-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            </div>
-            <div class="phone-btn" style="margin-top:auto">Continue</div>
-          </div>
+        <div class="phone-frame">
+          <img src="screenshot-tasks.png" alt="Peezy task list" class="phone-screenshot">
         </div>
       </div>
       <div class="magic-text reveal">
