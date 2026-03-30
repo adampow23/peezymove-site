@@ -73,6 +73,7 @@ nav.scrolled { padding:12px 0; background:rgba(255,255,255,0.95); }
   background:var(--ink); color:#fff; font-weight:700; font-size:.875rem;
   text-decoration:none; border:none; cursor:pointer;
   transition:all .3s cubic-bezier(0.16,1,0.3,1);
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 .btn-dark:hover { background:var(--ink-2); transform:translateY(-1px); box-shadow:0 6px 24px rgba(0,0,0,0.12); }
 
@@ -104,8 +105,8 @@ nav.scrolled { padding:12px 0; background:rgba(255,255,255,0.95); }
 .hero-badge {
   display:inline-flex; align-items:center; gap:8px;
   padding:7px 18px; border-radius:100px;
-  background:var(--bg-3); border:1px solid var(--gray-5);
-  font-size:.72rem; font-weight:700; color:var(--gray-1);
+  background:var(--bg-3); border:2px solid var(--gray-3);
+  font-size:.72rem; font-weight:700; color:var(--ink-2);
   text-transform:uppercase; letter-spacing:.12em;
   margin-bottom:28px;
   animation:badge-enter .8s cubic-bezier(0.16,1,0.3,1) both;
@@ -133,11 +134,11 @@ nav.scrolled { padding:12px 0; background:rgba(255,255,255,0.95); }
 .btn-ghost {
   display:inline-flex; align-items:center; gap:10px;
   padding:16px 36px; border-radius:100px;
-  background:transparent; color:var(--ink); font-weight:600; font-size:1rem;
-  text-decoration:none; border:1px solid var(--border-h); cursor:pointer;
+  background:var(--bg-2); color:var(--ink); font-weight:700; font-size:1rem;
+  text-decoration:none; border:2px solid var(--gray-4); cursor:pointer;
   transition:all .3s;
 }
-.btn-ghost:hover { border-color:var(--gray-3); background:var(--bg-2); }
+.btn-ghost:hover { border-color:var(--gray-3); background:var(--bg-3); }
 
 /* iPhone mockup — real screenshots */
 .phone-wrapper {
@@ -476,10 +477,10 @@ footer { padding:40px 0; border-top:1px solid var(--border); }
 <section class="proof">
   <div class="container">
     <div class="proof-inner reveal">
-      <div class="proof-item"><div class="proof-icon">&#x1F3D7;</div> Built by an 8-year industry veteran</div>
+      <div class="proof-item"><div class="proof-icon">&#x1F3D7;</div> Built by industry veterans</div>
       <div class="proof-item"><div class="proof-icon">&#x1F916;</div> Powered by advanced AI</div>
       <div class="proof-item"><div class="proof-icon">&#x1F6E1;</div> Pre-vetted vendor network</div>
-      <div class="proof-item"><div class="proof-icon">&#x26A1;</div> 200+ tasks automated</div>
+      <div class="proof-item"><div class="proof-icon">&#x26A1;</div> 50+ tasks automated</div>
     </div>
   </div>
 </section>
@@ -525,7 +526,7 @@ footer { padding:40px 0; border-top:1px solid var(--border); }
         <div class="step-icon">&#x1F4AC;</div>
         <div class="step-num">Step 01</div>
         <h3>Tell Peezy About Your Move</h3>
-        <p>Answer a quick assessment about your situation — pets, kids, lease, distance, timeline. Peezy learns what makes your move unique.</p>
+        <p>Answer a quick assessment about your situation — pets, kids, distance, timeline. Peezy learns what makes your move unique.</p>
       </div>
       <div class="step reveal d2">
         <div class="step-icon">&#x2728;</div>
@@ -537,7 +538,7 @@ footer { padding:40px 0; border-top:1px solid var(--border); }
         <div class="step-icon">&#x1F680;</div>
         <div class="step-num">Step 03</div>
         <h3>Peezy Acts. Magic Happens.</h3>
-        <p>Chat with your AI concierge, tap to delegate tasks, get matched with pre-vetted vendors. You guide. Peezy handles the rest.</p>
+        <p>Get matched with pre-vetted vendors, chat with industry experts who actually know the moving process, and let Peezy handle the heavy lifting. You guide. Real people do the rest.</p>
       </div>
     </div>
   </div>
@@ -554,7 +555,7 @@ footer { padding:40px 0; border-top:1px solid var(--border); }
       </div>
       <div class="magic-text reveal">
         <div class="section-tag">Vendor Matching</div>
-        <h2 class="big">You guide. Peezy acts.<br>Magic happens.</h2>
+        <h2 class="big">You guide.<br>Peezy acts.<br>Magic happens.</h2>
         <p>Answer a few quick questions. Peezy handles the rest — finding movers, getting quotes, setting up services, forwarding mail. While you live your life, your move is quietly getting done in the background.</p>
         <div class="magic-list">
           <div class="magic-item">
@@ -608,8 +609,8 @@ footer { padding:40px 0; border-top:1px solid var(--border); }
       <div class="feat reveal d1">
         <div class="feat-content">
           <div class="feat-icon">&#x1F4AC;</div>
-          <h3>Chat with Peezy</h3>
-          <p>Ask questions, get advice, or just vent. Your AI concierge is available 24/7 and actually understands the moving process.</p>
+          <h3>Chat with Industry Experts</h3>
+          <p>Ask questions and get real advice from people who've handled thousands of moves. Real humans who actually understand what you're going through.</p>
         </div>
       </div>
       <div class="feat reveal d2">
@@ -637,13 +638,6 @@ footer { padding:40px 0; border-top:1px solid var(--border); }
       <div class="section-tag center reveal">The Vision</div>
       <h2 class="reveal d1">The operating system for life's biggest moments</h2>
       <p class="reveal d2">Moving is just the beginning. Peezy is building the platform that guides you through every major life transition with the same intelligence and care.</p>
-      <div class="verticals reveal d3">
-        <div class="vert">&#x1F4E6; Moving</div>
-        <div class="vert">&#x1F492; Weddings</div>
-        <div class="vert">&#x1F393; College</div>
-        <div class="vert">&#x1F3E0; Home Buying</div>
-        <div class="vert">+ More</div>
-      </div>
     </div>
   </div>
 </section>
